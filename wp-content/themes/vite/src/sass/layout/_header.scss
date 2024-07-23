@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: transparent;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 86px;
+
+  &.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &.sticky {
+    background: color(primary, pink);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+
+    span {
+      display: inline-block;
+      background: #fff;
+      width: 1px;
+      height: 40px;
+    }
+
+    a {
+      color: #222222;
+
+      span {
+        color: #106eea;
+      }
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
