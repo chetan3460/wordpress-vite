@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+wp-config.php
+wp-config-sample.php
+.htaccess
+wp-content/uploads/
+wp-content/plugins/
+wp-admin
+wp-includes
+wp-content/languages/
+wp-content/themes/vite/node_modules

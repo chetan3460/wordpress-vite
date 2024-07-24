@@ -170,7 +170,7 @@ export default new (class App {
     const topOffset = this.window.scrollTop();
 
     this.header.toggleClass('top', topOffset > 300);
-    this.header.toggleClass('sticky', topOffset > 600);
+    this.header.toggleClass('sticky', topOffset > 300);
     if (topOffset > this.previousScroll || topOffset < 500) {
       this.header.removeClass('sticky');
     } else if (topOffset < this.previousScroll) {

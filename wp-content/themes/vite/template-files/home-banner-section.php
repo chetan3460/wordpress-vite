@@ -1,60 +1,82 @@
+<!-- Main Banner Section-->
 <section class="banner-area">
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="swiper swiper-scale-effect">
         <!-- Swiper -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <?php if( have_rows('banner_slider') ): ?>
             <div class="swiper-wrapper">
-                <?php
-                    while(have_rows('banner_slider') ): the_row();
-                    $banner_image = get_sub_field('banner_image');
-                    $banner_title = get_sub_field('banner_title');
-                    $banner_subtitle = get_sub_field('banner_subtitle');
-                    $button_link = get_sub_field('button_link');
-                    ?>
-
-
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="slider-img">
-                        <img src="<?php echo $banner_image ?>" alt="">
+                        <img src="<?php bloginfo('template_directory'); ?>/src/images/banner-img01.jpg" alt="">
                     </div>
                     <div class="banner-caption">
+                        <h1 class="text-white">Breakaway from the old.
+                            <span class="block font-bold hero-3__title bd_banner__anim">Upgrade.</span>
 
-                        <h1 class="text-white position-relative animation__char_come">
-                            <?php echo $banner_title; ?>
                         </h1>
+                        <div class="banner-text">
+                            <p class="text-white hero-3__text p-text">Power your breakaway digital
+                                banking
+                                model with world's
+                                leading
+                                Temanos partner</p>
+                            <a class="main-btn">
+                                book a consultation
+                                <i class="arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-img">
 
-                        <div class="banner-text bdFadeUp">
-                            <p class="text-white">
-                                <?php echo $banner_subtitle ?>
-                            </p>
-                            <?php if( $button_link ):
-                        $link_url = $button_link['url'];
-                        $link_title = $button_link['title'];
-                        $link_target = $button_link['target'] ? $button_link['target'] : '_self';
-                    ?>
-                            <div>
-                                <a class="main-btn" href="<?php echo esc_url( $link_url ); ?>"
-                                    target="<?php echo esc_attr( $link_target ); ?>">
-                                    <?php echo esc_html( $link_title ); ?>
-                                    <i class="arrow"></i>
+                        <img src="<?php bloginfo('template_directory'); ?>/src/images/banner-img02.jpg" alt="">
+                    </div>
+                    <div class="banner-caption">
+                        <h1 class="text-white  text-lg ">Breakaway from the old.
+                            <span class="d-block font-bold">Upgrade.</span>
 
-                                </a>
-                            </div>
-                            <?php endif; ?>
+                        </h1>
+                        <div class="banner-text">
+                            <p class="text-white">Power your breakaway digital banking model with world's
+                                leading
+                                Temanos partner</p>
+                            <a class="main-btn">
+                                book a consultation
+                                <i class="arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-img">
+
+                        <img src="<?php bloginfo('template_directory'); ?>/src/images/banner-img03.jpg" alt="">
+                    </div>
+                    <div class="banner-caption">
+                        <h1 class="text-white">Breakaway from the old.
+                            <span class="block font-bold">Upgrade.</span>
+
+                        </h1>
+                        <div class="banner-text">
+                            <p class="text-white">Power your breakaway digital banking model with world's
+                                leading
+                                Temanos partner</p>
+                            <a class="main-btn">
+                                book a consultation
+                                <i class="arrow"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <?php endwhile; ?>
             </div>
+            <!-- Add pagination -->
             <div class="swiper-pagination"></div>
-            <?php endif; ?>
 
         </div>
-
     </div>
 
 </section>
