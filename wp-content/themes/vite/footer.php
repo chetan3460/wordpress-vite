@@ -5,19 +5,19 @@
                 <div class="footer-section  row">
                     <div class="col-lg-3 col-12">
                         <div class="footer--logo">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/logo-alt-group.png" />
+                            <img src="<?php bloginfo('template_directory'); ?>/src/images/logo-alt-group.png" />
                         </div>
                     </div>
                     <div class="col-lg-3 col-12 logo-order">
                         <div class="footer--social-logo d-flex">
                             <ul class="d-flex justify-content-center gap-2 p-0 mb-0">
-                                <li><img src="<?php bloginfo('template_directory'); ?>/images/icon-linkedin.png" />
+                                <li><img src="<?php bloginfo('template_directory'); ?>/src/images/icon-linkedin.png" />
                                 </li>
-                                <li><img src="<?php bloginfo('template_directory'); ?>/images/icon-facebook.png" />
+                                <li><img src="<?php bloginfo('template_directory'); ?>/src/images/icon-facebook.png" />
                                 </li>
-                                <li><img src="<?php bloginfo('template_directory'); ?>/images/icon-twitter.png" />
+                                <li><img src="<?php bloginfo('template_directory'); ?>/src/images/icon-twitter.png" />
                                 </li>
-                                <li><img src="<?php bloginfo('template_directory'); ?>/images/icon-youtube.png" />
+                                <li><img src="<?php bloginfo('template_directory'); ?>/src/images/icon-youtube.png" />
                                 </li>
                             </ul>
 

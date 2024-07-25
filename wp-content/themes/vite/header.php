@@ -8,19 +8,19 @@
     <title><?php bloginfo('name');?></title>
 
     <?php wp_head(); ?>
-    <?php
+    <!-- </?php
 $fileversion = '2'; // Make sure this is set dynamically if needed
 ?>
     <script type="module"
-        src="<?php echo get_template_directory_uri() . '/dist/js/app-' . $fileversion . '.min.js'; ?>"></script>
+        src="</?php echo get_template_directory_uri() . '/dist/js/app-' . $fileversion . '.min.js'; ?>"></script> -->
 
 
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 
-    <!-- HEADER CONTENT -->
+    <!-- HEADER CONTENT d -->
     <header id="header" class=" fixed-top d-flex align-items-center">
         <div class="container-fluid">
             <div class="row">

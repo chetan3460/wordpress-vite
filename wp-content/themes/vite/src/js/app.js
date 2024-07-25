@@ -1,15 +1,15 @@
 import Header from '@components/Header.js';
-import BlockMain from "./Blocks/BlockMain.js";
+// import BlockMain from "./Blocks/BlockMain.js";
 import DynamicImports from './components/DynamicImports.js';
 // import DynamicImports from '@components/DynamicImports.js';
 
 // import { inVP } from "./utils";
 
 
-import '../../src/sass/app.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap'; // import Bootstrap JavaScript components
-import '../../node_modules/swiper/swiper-bundle.min.css';
+// import '../../src/sass/app.scss';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap'; // import Bootstrap JavaScript components
+// import '../../node_modules/swiper/swiper-bundle.min.css';
 
 
 export default new (class App {
@@ -44,19 +44,11 @@ export default new (class App {
     //   });
     // }
 
-    new BlockMain();
 
     new DynamicImports();
     // new Animation();
   };
 
-  // captchaLoad = () => {
-  //   $(window).on("scroll load", () => {
-  //     if (inVP(this.formidable) && !this.formidable.hasClass("formInview")) {
-  //       this.formidable.addClass('formInview');
-  //     }
-  //   });
-  // };
 
   setDomMap = () => {
     this.window = $(window);
@@ -227,3 +219,5 @@ export default new (class App {
     }
   };
 })();
+
+

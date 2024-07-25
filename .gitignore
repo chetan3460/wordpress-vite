@@ -129,6 +129,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+
 wp-config.php
 wp-config-sample.php
 .htaccess
